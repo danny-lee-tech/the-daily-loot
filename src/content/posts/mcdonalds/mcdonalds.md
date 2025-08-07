@@ -1,12 +1,12 @@
 ---
-title: McDonald's
+title: McDonald's Can Still Be Affordable
 slug: mcdonalds
 category: Loot Usage
 description: How to save money eating at McDonald's
 date: 2025-08-10
 cover: ./mcdonalds.avif
 tags:
-  - mobileapp
+  - mcdonalds
   - restaurant
 ---
 

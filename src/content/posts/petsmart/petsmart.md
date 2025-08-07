@@ -1,12 +1,13 @@
 ---
-title: Pet Upkeep Cost - Petsmart
+title: Lower Pet Upkeep Cost at Petsmart
 slug: petsmart
 category: Loot Usage
-description: How to Keep Pet Upkeep Costs Low
+description: Lower Pet Upkeep Cost at Petsmart
 date: 2025-08-12
 cover: ./petsmart.jpg
 tags:
   - pets
+  - petsmart
 ---
 
 <div class="text-center text-2xl">Under Construction</div>

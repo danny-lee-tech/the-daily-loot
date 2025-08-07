@@ -1,5 +1,5 @@
 ---
-title: Slickdeals
+title: How to Save Money Using Slickdeals
 slug: slickdeals
 category: Loot Usage
 description: How to Save Money Using Slickdeals
@@ -7,6 +7,7 @@ date: 2025-08-14
 cover: ./slickdeals.png
 tags:
   - deals
+  - slickdeals
 ---
 
 ## Under Construction

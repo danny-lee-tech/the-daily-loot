@@ -1,12 +1,12 @@
 ---
-title: Monarch Money
+title: Why Use Monarch Money?
 slug: monarch-money
 category: Loot Tracker
 description: Why Use Monarch Money?
 date: 2025-08-11
 cover: ./monarch-money.avif
 tags:
-  - mobileapp
+  - monarchmoney
   - budget
   - networth
 ---

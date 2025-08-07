@@ -1,12 +1,12 @@
 ---
-title: Robinhood
+title: The Pros & Cons of Robinhood
 slug: robinhood
 category: Loot Investments
 description: The Pros & Cons of Robinhood
 date: 2025-08-13
 cover: ./robinhood.jpg
 tags:
-  - mobileapp
+  - robinhood
   - investments
 ---
 
