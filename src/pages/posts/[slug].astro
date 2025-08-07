@@ -16,14 +16,14 @@ const { Content } = await post.render();
 
 <Layout seo={{ title: post.data.title, description: post.data.description }}>
   <article class="prose max-w-2xl mx-auto">
-    <h1>{post.data.title}</h1>
-    <p class="text-sm text-base font-bold mb-4">
+    <h1 class="text-center">{post.data.title}</h1>
+    <p class="text-sm text-base text-center font-bold mb-4">
       {post.data.date.toLocaleDateString()}
     </p>
     <Image
       src={post.data.cover}
       alt={post.data.title}
-      width={560}
+      width={720}
       height={315}
       class="mx-auto my-8 rounded-lg shadow-md"
     />

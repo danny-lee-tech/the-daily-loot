@@ -3,6 +3,7 @@ title: 'About Me'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Aug 10 2025'
 cover: '../assets/animeme.jpg'
+coverWidth: 360
 layout: '../../layouts/Markdown.astro'
 ---
 ## Working Life/Hiatus

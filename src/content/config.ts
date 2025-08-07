@@ -12,6 +12,7 @@ export const collections = {
         description: z.string().max(160),
         category: z.string().optional(),
         cover: image(),
+        coverWidth: z.number().default(720),
         date: z.date(),
         tags: z.array(z.string()).default([]),
         draft: z.boolean().optional(),

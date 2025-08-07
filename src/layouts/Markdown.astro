@@ -24,20 +24,20 @@ if (coverImg && typeof coverImg === 'string' && assetMap[coverImg as string]) {
             <Image 
                 src={coverImg}
                 alt={frontmatter.title}
-                width={560}
+                width={frontmatter.coverWidth}
                 height={315}
                 class="mx-auto my-8 rounded-lg shadow-md"
             />
         ) : coverImg ? (
             <img 
                 src={coverImg}
-                alt={frontmatter.title}
-                width={560}
+                alt={frontmatter.coverWidth}
+                width={720}
                 height={315}
                 class="mx-auto my-8 rounded-lg shadow-md"
             />
         ) : null}
-        <div class={`prose mx-auto ${center ? 'text-center' : ''}`}>
+        <div class={`prose max-w-4xl mx-auto ${center ? 'text-center' : ''}`}>
             <slot />
         </div>
     </div>
