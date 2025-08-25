@@ -75,7 +75,11 @@ import { SITE_TITLE } from '../consts';
           <a href="/posts" class="normal-case font-bold text-xl">Blog</a>
         </li>
         <li>
-          <a href="/about/me" class="normal-case font-bold text-xl">About</a>
+          <a class="normal-case font-bold text-xl">About</a>
+          <ul>
+            <li><a href="/about/me">About Me</a></li>
+            <li><a href="/about/site">About Site</a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -98,10 +102,13 @@ import { SITE_TITLE } from '../consts';
           <a href="/posts" class="normal-case font-bold text-lg">Posts</a>
         </li>
         <li>
-          <a href="/about/me" class="normal-case font-bold text-lg">About Me</a>
-        </li>
-        <li>
-          <a href="/about/site" class="normal-case font-bold text-lg">About Site</a>
+          <details id="about-menu">
+            <summary class="normal-case font-bold text-lg">About</summary>
+            <ul class="w-[120px]">
+              <li><a href="/about/me">About Me</a></li>
+              <li><a href="/about/site">About Site</a></li>
+            </ul>
+          </details>
         </li>
       </ul>
     </div>
