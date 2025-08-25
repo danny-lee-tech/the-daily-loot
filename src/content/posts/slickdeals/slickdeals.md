@@ -1,4 +1,5 @@
 ---
+draft: true
 title: How to Save Money Using Slickdeals
 slug: slickdeals
 category: Loot Usage

@@ -4,6 +4,8 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from "astro:assets";
 import { getCollection } from 'astro:content';
 const posts = await getCollection('posts');
+const filteredPosts = posts.filter(post => !post.data.draft);
+console.info(filteredPosts);
 ---
 
 <Layout>
@@ -12,9 +14,8 @@ const posts = await getCollection('posts');
     <!-- Featured Latest Posts Section -->
     <section class="container mx-auto px-4 py-8">
 		<h2 class="text-2xl font-semibold mb-6">Latest Posts</h2>
-		<p class="mb-4 text-base-content/70">This section lists example content to show how the theme works. Replace or remove this section for your own site.</p>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-		  {posts
+		  {filteredPosts
 			.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
 			.slice(0, 3)
 			.map(v => (

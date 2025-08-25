@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Lower Pet Upkeep Cost at Petsmart
 slug: petsmart
 category: Loot Usage

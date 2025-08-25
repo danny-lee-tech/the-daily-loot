@@ -1,4 +1,5 @@
 ---
+draft: true
 title: McDonald's Can Still Be Affordable
 slug: mcdonalds
 category: Loot Usage
