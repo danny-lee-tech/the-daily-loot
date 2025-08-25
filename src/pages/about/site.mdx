@@ -1,0 +1,43 @@
+---
+title: 'About Site'
+description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+pubDate: 'Aug 10 2025'
+layout: '../../layouts/Markdown.astro'
+---
+import { Image } from 'astro:assets';
+import astro from '../../assets/site/astro-logo-dark.svg';
+import cloudflare from '../../assets/site/cloudflare-pages-single.svg';
+import tailwind from '../../assets/site/tailwindcss-logotype.a1069bda.svg';
+import daisyui from '../../assets/site/horizontal-dark.svg';
+
+# Considerations
+Prior to this, I was managing a Wordpress instance on AWS Lightsail (which I migrated from EC2 for easy migration/upgrades). To keep costs low, I installed plugins that were free and I used Google's SMTP server to send emails, which isn't ideal to the email quotas. The overall cost was around $8.5/month, which included the domain registration and the Lightsail instance. Using an actual enterprise email server would have cost around an additional $0.10 per 1000 emails (AWS SES), which isn't bad, but I was worried about subscription registration email spam, which had happened in the past, which could have skyrocketed the bill unnecessarily.
+
+I realized that most of my time and effort was protecting against spammers. I could have used plugins to do it, but they would have doubled the overall cost. Again, the reason to protect against spammers was because of the input fields that were on the site, mainly the subscription contact fields and the comment section.
+
+I could have also deployed Wordpress on my home server, but that would mean allowing the world to access my network or buying a separate network just for the server, which would increase cost and effort to setup.
+
+In the spirit of the blog theme, I wanted the upkeep cost and effort to be as low as possible, which is why I decided on a static blog site. Less worry about spam attacks (other than maybe DDOS). No worries about email costs.
+
+# Tech Stack Choices
+
+## Static Site Generator
+Since I decided on a static blog site, I decided on 3 static-site generator options (limited my research to an hour): Eleventy, Jekyll, and Astro. All of them met my needs, so I prioritized it by most popular framework using Google Trends: Astro, Jekyll, Eleventy. I started with Astro and after a half hour, I was able to create a starting point of a blog (which I completely scrapped later). I was impressed with how quck and easy it was, so I didn't try the other two options. Plus, the island architecture seemed something I could use to expand my site if I wanted to go partly dynamic in the future.
+
+<Image src={astro} alt="Astro" height="100"/>
+**Static Site Generator Winner: Astro**
+
+## Javascript/CSS Libraries
+I've done frontend development in the past using Angular 1, ExtJS, and a little bit of React/Redux. All that taught me was that I wanted to avoid as much CSS and Javascript as possible, so I needed a good CSS and components library. I came across [Tailwind CSS](https://tailwindcss.com/) since it was popular and integrated with Astro. As an exercise, I took the Astro starter kit and converted it to using Tailwind CSS instead of its inline CSS setup. It took a good 2 hours, mostly because I had to get used to how to handle hover and media tags (and how to handle css changes at a lower descendent level). Not perfect, but 99% of what I wanted to do around CSS was easier.
+
+Tailwind CSS in itself is just a CSS framework to avoid having to write all the CSS code. I still needed a good components library. Tailwind has something called Tailwind Plus, but it wasn't free. After working with Tailwind CSS and browsing how-to documents, I noticed [Daisy UI](https://daisyui.com/) popping up a lot. Also, while looking for Astro themes, I came across the [Stargarden Theme](https://github.com/sustanza/stargarden) that I liked from a presentation and a code point-of-view that also used Daisy UI. So it was an easy decision to start using Daisy UI.
+
+<Image src={tailwind} alt="Astro" height="40"/>
+<Image src={daisyui} alt="Astro" height="75"/>
+**Javascript/CSS Library Winners: Tailwind CSS and Daisy UI**
+
+## Build & Hosting Platform
+There were two clear free options to hosting this blog: [Github Pages](https://docs.github.com/en/pages) and [Cloudflare Pages](https://pages.cloudflare.com/). In this case, I did try both only because GitHub pages only took a few minutes to setup since I already had a Github account. But ultimately, I decided on Cloudflare Pages because of its CDN, DDoS and SSL features (plus a lot of other neat features such as you can view the site from previous deployments). Faster performance means higher SEO score. Also, Cloudflare has one of the overall cheaper domain registration services (a lot of companies have a cheap intro fee for the first year, but then a fairly expensive renewal fee). Pretty much a no-brainer to go with Cloudflare.
+
+<td><Image src={cloudflare} alt="Astro" height="100"/></td>
+**Build/Hosting Platform Winner: Cloudflare Pages**
