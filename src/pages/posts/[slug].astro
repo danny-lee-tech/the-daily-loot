@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import PostComments from "../../layouts/PostComments.astro";
 export const prerender = true;
 import { Image } from "astro:assets";
 export async function getStaticPaths() {
@@ -31,6 +32,7 @@ const { Content } = await post.render();
       {post.data.date.toLocaleDateString()}
     </p>
     <Content />
+    <PostComments />
   </article>
   <div class="flex justify-center mt-8">
     <a href="/posts" class="btn btn-primary">Back to all posts</a>
