@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import logo from "../assets/icon.png";
 
 import { SEO } from "astro-seo";
+import { GoogleAnalytics } from 'astro-google-analytics';
 
 export interface Props {
   /** Optional granular SEO overrides coming from .astro pages or components */
@@ -63,6 +64,7 @@ const seoConfig = {
       href={new URL('rss.xml', Astro.site)}
     />
     <meta name="generator" content={Astro.generator} />
+    <GoogleAnalytics id="G-898FLM8LRD" />
   </head>
 
   <body
