@@ -29,7 +29,7 @@ const expressiveCode = astroExpressiveCode({
 // https://astro.build/config
 export default defineConfig({
 
-  site: 'https://the-daily-loot.us',
+  site: 'https://the-daily-loot.com',
   vite: {
     plugins: [tailwindcss()]
   },
