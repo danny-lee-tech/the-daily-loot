@@ -13,6 +13,8 @@ const { slug } = Astro.params;
 const post = await getEntry("posts", slug);
 if (!post) throw new Error(`Post “${slug}” not found`);
 const { Content } = await post.render();
+
+var options = { year: 'numeric', month: 'long', day: 'numeric' };
 ---
 
 <Layout seo={{ title: post.data.title, description: post.data.description }}>
@@ -25,11 +27,11 @@ const { Content } = await post.render();
       class="mx-auto my-8 rounded-lg shadow-md"
     />
     <div class="text-center">
-      <div class="mb-0 mt-0 badge badge-primary mx-auto">{post.data.category}</div>
+      <div class="mb-0 mt-0 badge badge-primary mx-auto text-2xl">{post.data.category}</div>
     </div>
-    <h1 class="text-center mb-0 mt-0">{post.data.title}</h1>
-    <p class="text-sm text-base text-center font-bold mb-4 mt-0">
-      {post.data.date.toLocaleDateString()}
+    <h1 class="text-center mb-2 mt-2">{post.data.title}</h1>
+    <p class="text-md text-black/70 text-center font-bold mb-4 mt-0">
+      Last Updated: {new Date(post.data.date).toLocaleDateString("en-us", options)}
     </p>
     <Content />
     <PostComments />
