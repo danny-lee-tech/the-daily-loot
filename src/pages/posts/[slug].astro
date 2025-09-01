@@ -1,7 +1,8 @@
 ---
 import { getCollection, getEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import PostComments from "../../layouts/PostComments.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
+import PostComments from "../../components/PostComments.astro";
 export const prerender = true;
 import { Image } from "astro:assets";
 export async function getStaticPaths() {
@@ -11,6 +12,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const post = await getEntry("posts", slug);
+
 if (!post) throw new Error(`Post “${slug}” not found`);
 const { Content } = await post.render();
 
@@ -18,7 +20,7 @@ var options = { year: 'numeric', month: 'long', day: 'numeric' };
 ---
 
 <Layout seo={{ title: post.data.title, description: post.data.description }}>
-  <article class="prose max-w-2xl mx-auto p-2">
+  <article class="prose max-w-4xl mx-auto p-2">
     <Image
       src={post.data.cover}
       alt={post.data.title}
@@ -38,5 +40,8 @@ var options = { year: 'numeric', month: 'long', day: 'numeric' };
   </article>
   <div class="flex justify-center mt-8">
     <a href="/posts" class="btn btn-primary">Back to all posts</a>
+  </div>
+  <div slot="table-of-contents">
+    <TableOfContents slug={slug}/>
   </div>
 </Layout>
