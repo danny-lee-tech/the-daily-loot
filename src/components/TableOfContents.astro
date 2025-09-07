@@ -1,0 +1,55 @@
+---
+import TableOfContentsEntry from "../components/TableOfContentsEntry.astro";
+
+const { slug } = Astro.params;
+
+type Module = {
+  [key: string]: any;
+}
+const modules: Module = import.meta.glob('../content/posts/**/*.md*', { eager: true });
+
+function buildHierarchy(headings: any)
+{
+  const toc: any[] = [];
+  const parentHeadings = new Map();
+  
+  if (!headings)
+    return toc;
+  
+  headings.forEach((h: any) => {
+    const heading = { ...h, subheadings: [] };
+    parentHeadings.set(heading.depth, heading);
+    // Change 2 to 1 if your markdown includes your <h1>
+    if (heading.depth === 2) {
+      toc.push(heading);
+    } else {
+      parentHeadings.get(heading.depth - 1).subheadings.push(heading);
+    }
+  });
+  return toc;
+}
+
+var toc: Object[] = [];
+if (slug) {
+  var foundKey = Object.keys(modules).find(key => key.includes(slug) ) ?? "";
+  if (foundKey) {
+    console.info(modules);
+    console.info(foundKey);
+    toc = buildHierarchy(modules[foundKey].getHeadings());
+  }
+}
+---
+{toc && toc.length > 0 && (
+  <div class="w-70 flex-none hidden lg:block">
+    <nav class="card card-border bg-base-200">
+      <div class="card-body">
+      <h2 class="card-title m-auto">Table of Contents</h2>
+      <ul>
+        {toc.map((heading) => (
+          <TableOfContentsEntry heading={heading} />
+        ))}
+      </ul>
+      </div>
+    </nav>
+  </div>
+)}
