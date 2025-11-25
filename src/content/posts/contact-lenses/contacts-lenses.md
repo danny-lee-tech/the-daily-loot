@@ -1,0 +1,59 @@
+---
+draft: true
+title: Ways to Save on Contact Lenses
+slug: contact-lenses
+category: Loot Usage
+description: How to save money when purchasing contact lenses
+date: 2025-11-25
+cover: ./contacts.jpg
+tags:
+  - contacts
+  - lenses
+---
+
+## Introduction
+
+If you are like me, then you have forgotten that your vision insurance benefits resets at the end of the calendar year, and are now planning to figure out how to use it.  I have astigmatism, so a year supply of contact lenses could cost me 100s of dollars for just a single year's worth of contacts. Yes, there's vision insurance, but they only cover around $120-$130 for contact lenses ($130 in my case w/ 15% discount for anything about $130).
+
+I'm going to use the standard monthly Biofinity CooperVision contact lenses as an example because that looks like the most bought brand. From the LensCrafters site, a years worth of these contacts are normally $62.99 a box of 6 lenses ($251.96 for a year), but it currently has a Black Friday sale for $55.59 a box ($221.96 a year). Just to verify, I checked MyEyeDr and they are selling it for $68.00 a box, so just for comparison sake, I'll use LensCrafters pricing since it's cheaper.
+
+## Level One - FSA
+
+If you work for an employer that has an [FSA](https://www.investopedia.com/articles/personal-finance/060215/how-flexible-spending-accounts-work.asp) option, I would recommend putting some money into an FSA account for vision purchases. Even if you have an HSA, you should be eligible to put money into a [Limited Purpose FSA (LPFSA)](https://www.investopedia.com/terms/l/limited-purpose-flexible-spending-arrangement-lpfsa.asp) using pre-tax dollars.
+
+FSA companies usually give you a debit card, so it's really convenient to use when you need to use it. Just remember to use up all the money (or enough to reach the maximum rollover amount, if it has this feature) [before the end of the year (or end of grace period)](https://www.investopedia.com/ask/answers/111314/how-does-grace-period-work-my-flexible-spending-account-fsa.asp). It is a use-or-lose-it situation.
+
+### How much would you save using this method?
+
+0-37%. This depends on what your income tax bracket is for this year, so if you are in the 22% tax bracket, then you would be saving 22% on this option. This is combinable with any of the options below.
+
+## Level Two - The "Costco" Discount
+
+If you are going to a non-big-box optometrist store, there is a good chance that they might price match Costco or Sam's Club, even though they don't advertise it. They might not have the rebates that Costco advertises, but they might have one of their own that could be close or better than Costco's. Most of the time, they won't even ask you to prove that you are a Costco or Sam's Club member. I recommend this approach for the easiest way to lower your contact lense bill.
+
+If they don't price match and you do have a Costco or Sam's Club membership, then my recommended approach would be to make sure they print out your presecription so that you can directly buy them from Costco or Sam's Club. If you don't have a Costco or Sam's Club membership, you could buy a membership for $65 or $50, respectively, and still save a little, but this option might not be worth the inconvenience.
+
+<img src="CostcoQuote.png" width="400"> <img src="CostcoRebate.png" width="326">
+
+### How much would you save using this method?
+
+In this case, Costco is selling this product for $38.87 a box with a $20 mail-in rebate if you buy 4 boxes ($155.48 - $20 = $135.48 for a year). That's an $86.48 savings or 38.96% discount. Nearly free with vision insurance.
+
+## Level Three - Out-Of-Network and Online
+
+If you look at your vision insurance, you'll notice that you have an in-network and an out-of-network benefit for contact lenses. The out-of-benefit is usually a reimbursement but for a lower amount ($105 in my case). But the thing is, you can usually find an online retailer that has better pricing than even Costco.
+
+For instance, this is from [ContactsDirect.com](https://www.contactsdirect.com/) and after all the discounts, it ends up being ~$29.79 per box ($119.17). That's $102.79 cheaper than LensCrafters and $16.31 cheaper than Costco. In this case though, Costco is cheaper since most vision insurance plans consider Costco an in-network provider, but if you don't already have a Costco membership, then this option would be cheaper. 
+
+[OptiContacts](https://www.opticontacts.com/) is another good option, but you do have to make sure you aren't being bait and switched as you can see in this quote (see screenshot below). A lot of online stores have these extremely high processing fees.
+
+![OptiContacts Quote](./OptiContacts.png)
+
+The hassle here is that you will have to submit a form (either written or online depending on the vision insurance) to get the reimbursement, so it has similar risks to rebates, where reimbursement/rebate could be rejected. I've never had my reimbursement get rejected, but it is possible that you might run into some issues. Another negative is that you do have to pay the full cost upfront and wait a few weeks to get your reimbursement. It could be a good thing for credit card points, but definitely bad, if you are strapped for cash.
+
+Extra Pro-Tip - Check Rakuten for any cashback for the online site you are using. For instance, currently, Rakuten has [4% cashback on ContactsDirect.com](https://www.rakuten.com/shop/contactsdirect?query=Contacts&position=1&type=suggest&store=14880). With this, it would make this option the cheapest.
+
+### How much would you save using this method?
+
+Total cost = $119.17 (ContactsDirect) * (0.96 for Rakuten cashback) + ~$25 (difference between in-network and out-of-network discount)= $139.40
+Savings = $221.96 - $139.4 = $87.46 or 39.4% discount
