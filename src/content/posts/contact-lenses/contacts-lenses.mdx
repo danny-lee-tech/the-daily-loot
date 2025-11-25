@@ -10,6 +10,10 @@ tags:
   - contacts
   - lenses
 ---
+import { Image } from 'astro:assets';
+import costcoQuote from 'CostcoQuote.png';
+import costcoRebate from 'CostcoRebate.png';
+import optiContacts from 'OptiContacts.png';
 
 ## Introduction
 
@@ -33,7 +37,7 @@ If you are going to a non-big-box optometrist store, there is a good chance that
 
 If they don't price match and you do have a Costco or Sam's Club membership, then my recommended approach would be to make sure they print out your presecription so that you can directly buy them from Costco or Sam's Club. If you don't have a Costco or Sam's Club membership, you could buy a membership for $65 or $50, respectively, and still save a little, but this option might not be worth the inconvenience.
 
-<img src="CostcoQuote.png" width="400"> <img src="CostcoRebate.png" width="326">
+<Image src={costcoQuote} alt="Costco Quote" width="400"/> <Image src={Costco Rebate} alt="Treats Reward" width="326"/>
 
 ### How much would you save using this method?
 
@@ -47,7 +51,7 @@ For instance, this is from [ContactsDirect.com](https://www.contactsdirect.com/)
 
 [OptiContacts](https://www.opticontacts.com/) is another good option, but you do have to make sure you aren't being bait and switched as you can see in this quote (see screenshot below). A lot of online stores have these extremely high processing fees.
 
-![OptiContacts Quote](./OptiContacts.png)
+<Image src={optiContacts} alt="OptiContacts Quote"/>
 
 The hassle here is that you will have to submit a form (either written or online depending on the vision insurance) to get the reimbursement, so it has similar risks to rebates, where reimbursement/rebate could be rejected. I've never had my reimbursement get rejected, but it is possible that you might run into some issues. Another negative is that you do have to pay the full cost upfront and wait a few weeks to get your reimbursement. It could be a good thing for credit card points, but definitely bad, if you are strapped for cash.
 
